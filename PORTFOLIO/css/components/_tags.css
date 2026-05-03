@@ -1,0 +1,106 @@
+/* ============================================================
+   COMPONENTS - TAGS & BADGES
+   ============================================================ */
+
+/* Tech Tag */
+.tech-tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: 4px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  transition: all var(--transition-fast) var(--easing);
+}
+
+.tech-tag:hover {
+  background: var(--accent-dim);
+  border-color: rgba(200, 240, 60, 0.3);
+  color: var(--accent);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+/* Project Tag */
+.project-tag {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 3px var(--spacing-lg);
+  border-radius: 4px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.project-tags {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+/* School Tag */
+.school-tag {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 3px var(--spacing-lg);
+  border-radius: 4px;
+  background: rgba(110, 181, 255, 0.08);
+  border: 1px solid rgba(110, 181, 255, 0.15);
+  color: var(--blue);
+}
+
+/* Timeline Tag */
+.tl-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px var(--spacing-sm);
+  border-radius: 4px;
+  margin-left: var(--spacing-lg);
+  vertical-align: middle;
+}
+
+.tl-tag.edu {
+  background: rgba(110, 181, 255, 0.1);
+  color: var(--blue);
+}
+
+.tl-tag.work {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* Hero Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--accent-dim);
+  border: 1px solid rgba(200, 240, 60, 0.2);
+  color: var(--accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.hero-badge span {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2.5s infinite;
+}
