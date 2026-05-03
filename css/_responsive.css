@@ -1,0 +1,48 @@
+/* ============================================================
+   RESPONSIVE & MEDIA QUERIES
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    position: relative;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+  }
+
+  .sidebar-identity {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  main {
+    padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-3xl);
+  }
+
+  .stack-grid,
+  .projects-grid,
+  .school-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+  }
+}

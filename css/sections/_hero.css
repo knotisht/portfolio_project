@@ -1,0 +1,62 @@
+/* ============================================================
+   SECTIONS - HERO
+   ============================================================ */
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 5vw, var(--text-7xl));
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.hero-title .highlight {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.hero-desc {
+  font-size: var(--text-2xl);
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: flex;
+  gap: var(--spacing-2xl);
+  margin-top: var(--spacing-3xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.stat-label {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
