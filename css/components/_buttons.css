@@ -8,7 +8,7 @@
   align-items: center;
   gap: var(--spacing-sm);
   background: var(--accent);
-  color: #ffffff;
+  color: var(--bg);
   text-decoration: none;
   font-size: var(--text-md);
   font-weight: 600;
@@ -19,9 +19,9 @@
 }
 
 .btn-primary:hover {
-  background: #4f46e5;
+  background: var(--muted);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* Secondary Button */
@@ -51,7 +51,7 @@
 .contact-btn {
   display: block;
   background: var(--accent);
-  color: #ffffff;
+  color: var(--bg);
   text-decoration: none;
   text-align: center;
   font-size: var(--text-md);
@@ -64,7 +64,7 @@
 }
 
 .contact-btn:hover {
-  background: #4f46e5;
+  background: var(--muted);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }

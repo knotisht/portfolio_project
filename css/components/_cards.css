@@ -175,16 +175,17 @@
 }
 
 .school-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: rgba(110, 181, 255, 0.08);
-  border: 1px solid rgba(110, 181, 255, 0.15);
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   flex-shrink: 0;
+  padding: 8px;
 }
 
 .school-name {

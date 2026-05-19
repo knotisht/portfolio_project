@@ -11,22 +11,22 @@ aside {
   padding: var(--spacing-3xl) var(--spacing-2xl);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-3xl);
+  gap: var(--spacing-2xl);
 }
 
 /* Avatar Section */
 .avatar-wrap {
   position: relative;
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
 }
 
 .avatar {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #c8f03c22 0%, #6eb5ff22 100%);
-  border: 1.5px solid var(--border2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 2px solid var(--border2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,9 +35,11 @@ aside {
   color: var(--accent);
   letter-spacing: -1px;
   overflow: hidden;
-  background-image: url(../../assets/images/profile.jpg);
+  background-image: url(../../assets/images/picture.jpg);
   background-size: cover;
   background-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .avatar img {
@@ -45,6 +47,7 @@ aside {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .avatar-pulse {
@@ -95,6 +98,33 @@ aside {
 /* Sidebar Social Links */
 .sidebar-social {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-lg);
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Theme Toggle Icon */
+.theme-toggle-icon {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast) var(--easing);
+}
+
+.theme-toggle-icon:hover {
+  color: var(--accent);
+}
+
+.theme-toggle-icon svg {
+  transition: transform var(--transition-fast) var(--easing);
+}
+
+.theme-toggle-icon:hover svg {
+  transform: rotate(20deg);
 }

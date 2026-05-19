@@ -5,7 +5,8 @@
 nav {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-md);
+  width: 100%;
 }
 
 nav a {
@@ -19,9 +20,13 @@ nav a {
   padding: var(--spacing-md) var(--spacing-lg);
   border-radius: var(--radius-sm);
   letter-spacing: 0.02em;
-  transition: all var(--transition-fast) var(--easing);
+  transition: all var(--transition-base) var(--easing);
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a::before {
@@ -30,17 +35,19 @@ nav a::before {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: var(--accent);
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent) 0%, rgba(255, 255, 255, 0.5) 100%);
   transform: scaleY(0);
-  transition: transform var(--transition-fast) var(--easing);
+  transition: transform var(--transition-base) var(--easing);
   border-radius: 2px;
 }
 
 nav a:hover,
 nav a.active {
-  color: var(--text);
-  background: var(--surface2);
+  color: var(--accent);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
 }
 
 nav a:hover::before,
@@ -52,7 +59,14 @@ nav a .nav-icon {
   font-size: var(--text-lg);
   width: 18px;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.6;
+  transition: opacity var(--transition-fast) var(--easing);
+  flex-shrink: 0;
+}
+
+nav a:hover .nav-icon,
+nav a.active .nav-icon {
+  opacity: 1;
 }
 
 /* Social Links */
@@ -60,8 +74,8 @@ nav a .nav-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-sm);
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -69,10 +83,34 @@ nav a .nav-icon {
   text-decoration: none;
   font-size: var(--text-lg);
   transition: all var(--transition-fast) var(--easing);
+  flex: 1;
+  max-width: 44px;
+  cursor: pointer;
 }
 
 .social-link:hover {
   background: var(--accent-dim);
   border-color: var(--accent);
   color: var(--accent);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  padding: 0;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
+
+.theme-toggle svg {
+  transition: transform var(--transition-fast) var(--easing);
+}
+
+.theme-toggle:hover svg {
+  transform: rotate(20deg);
 }

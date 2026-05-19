@@ -23,16 +23,34 @@
           <div class="avatar"></div>
           <div class="avatar-pulse"></div>
         </div>
-        <div style="margin-top: 16px;">
-          <div class="sidebar-name">Glen Justin</div>
-          <div class="sidebar-role">Student</div>
-          <div class="sidebar-location">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            Pampanga, Philippines
+        <div style="margin-top: 16px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;">
+          <div>
+            <div class="sidebar-name">Glen Justin</div>
+            <div class="sidebar-role">Student</div>
+            <div class="sidebar-location">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Pampanga, Philippines
+            </div>
           </div>
+          <button id="theme-toggle" class="theme-toggle-icon" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon" style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -121,7 +139,7 @@
             <span class="stat-label">Year IT Student</span>
           </div>
           <div class="stat">
-            <span class="stat-num">4+</span>
+            <span class="stat-num">2+</span>
             <span class="stat-label">School Projects</span>
           </div>
           <div class="stat">
@@ -137,22 +155,19 @@
         <h2 class="section-title">A little bit about <em>who I am</em></h2>
 
         <p class="about-text">
-          I'm a aspring <strong>full-stack software engineer</strong> with a passion for building
-          intuitive, performant applications. I thrive at the intersection of design and
-          engineering — turning complex problems into simple, elegant solutions.
+          I'm a aspring <strong>full-stack software engineer</strong> who enjoys building apps that are fast, easy to use, and well-designed. I like combining both design and coding to create simple and effective solutions to complex problems.
         </p>
         <p class="about-text">
-          When I'm not coding, you'll find me exploring new technologies, contributing to
-          open-source, or leveling up through online courses and certifications. I believe
-          in <strong>continuous learning</strong> and bringing genuine curiosity to every
-          project I take on.
+          When I’m not coding, I’m probably scrolling, watching tutorials, or trying out new tech stuff for fun. 
+          I like <strong>learning at my own pace</strong> and improving through <strong>practice and experience. </strong>
+          I enjoy building small projects to apply what I learn, and I’m always <strong>open to new challenges</strong> that help me grow as a developer.
         </p>
       </section>
 
       <!-- ===== EXPERIENCE SECTION ===== -->
       <section id="experience">
         <div class="section-label">My Journey</div>
-        <h2 class="section-title">Experience & <em>Education</em></h2>
+        <h2 class="section-title">Experience & Education</h2>
 
         <div class="timeline">
           <div class="timeline-item">
@@ -163,12 +178,49 @@
             </div>
             <div class="tl-content">
               <div class="tl-title">BS Information Technology <span class="tl-tag work">Current</span></div>
-              <div class="tl-org">Your University · 3rd Year</div>
+              <div class="tl-org">Guagua National Colleges · 3rd Year</div>
               <div class="tl-desc">Currently pursuing a Bachelor's degree in Information Technology with focus on web systems, software development, and database management.</div>
             </div>
           </div>
 
+          <div class="timeline-item">
+            <div class="tl-year">Feb 2024</div>
+            <div class="tl-line">
+              <div class="tl-dot"></div>
+              <div class="tl-connector"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-title">IT Essentials <span class="tl-tag edu">Certified</span></div>
+              <div class="tl-org">Cisco</div>
+              <div class="tl-desc">Completed IT Essentials certification covering fundamental IT concepts, hardware, software, and networking principles.</div>
+            </div>
+          </div>
 
+          <div class="timeline-item">
+            <div class="tl-year">May 2025</div>
+            <div class="tl-line">
+              <div class="tl-dot"></div>
+              <div class="tl-connector"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-title">Adobe Certified Professional in Visual Design <span class="tl-tag edu">Certified</span></div>
+              <div class="tl-org">Adobe</div>
+              <div class="tl-desc">Certified in Visual Design using Adobe Photoshop. Verified credential demonstrating proficiency in design tools and visual communication.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-year">Jan 2026</div>
+            <div class="tl-line">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-title">IT Specialist - Networking <span class="tl-tag edu">Certified</span></div>
+              <div class="tl-org">Pearson</div>
+              <div class="tl-desc">Certified IT Specialist in Networking. Demonstrates expertise in network configuration, management, and troubleshooting.</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ===== TECH STACK SECTION ===== -->
@@ -209,13 +261,13 @@
         <div class="school-grid">
           <a href="http://bhqc.infinityfreeapp.com" class="school-card" target="_blank" rel="noopener noreferrer">
             <div class="school-card-head">
-              <div class="school-icon">🎓</div>
+              <div class="school-icon"><img src="./assets/images/logo.png" alt="Health Icon" style="width: 100%; height: 100%; object-fit: contain;"></div>
               <div>
                 <div class="school-name">Barangay Health Queueing System</div>
                 <div class="school-course">Web Development Project · 3rd Year</div>
               </div>
             </div>
-            <div class="school-desc">A web-based Barangay Health Queueing System built for the local of Guagua, handling tickets for medical consultations, convenient tracking queue status, and easy queue management — still in development.</div>
+            <div class="school-desc">A web-based Barangay Health Queueing System built for the local of Guagua, handling tickets for medical consultations, convenient tracking queue status, and easy queue management.</div>
             <div class="project-tags">
               <span class="school-tag">PHP</span>
               <span class="school-tag">MySQL</span>
@@ -231,64 +283,21 @@
                 <div class="school-course">HTML/CSS practive · 3rd Year</div>
               </div>
             </div>
-            <div class="school-desc">Made with pure HTML/CSS. A static website to work on our Frontend developing skills.</div>
+            <div class="school-desc">Made with pure HTML/CSS. A static website made to enhance our Frontend developing skills.</div>
             <div class="project-tags">
               <span class="school-tag">HTML</span>
               <span class="school-tag">CSS</span>
             </div>
           </a>
-
-          <div class="school-card">
-            <div class="school-card-head">
-              <div class="school-icon">🛡️</div>
-              <div>
-                <div class="school-name">Barangay Document Portal</div>
-                <div class="school-course">Web Development · 2nd Year</div>
-              </div>
-            </div>
-            <div class="school-desc">Community-level document request platform allowing residents to request clearances and certificates online, reducing manual processing time by 70%.</div>
-            <div class="project-tags">
-              <span class="school-tag">HTML</span>
-              <span class="school-tag">CSS</span>
-              <span class="school-tag">PHP</span>
-            </div>Tajam Project
-          </div>
-
-          <div class="school-card">
-            <div class="school-card-head">
-              <div class="school-icon">🤖</div>
-              <div>
-                <div class="school-name">AI-Powered Quiz Generator</div>
-                <div class="school-course">AI & Machine Learning · 3rd Year</div>
-              </div>
-            </div>
-            <div class="school-desc">A machine learning project that auto-generates quiz questions from uploaded PDF study materials using NLP techniques and a custom-trained model.</div>
-            <div class="project-tags">
-              <span class="school-tag">Python</span>
-              <span class="school-tag">JavaScript</span>
-              <span class="school-tag">MySQL</span>
-            </div>
-          </div>
         </div>
       </section>
 
       <!-- ===== CERTIFICATIONS SECTION ===== -->
       <section id="certifications">
         <div class="section-label">Credentials</div>
-        <h2 class="section-title">Certifications & <em>Achievements</em></h2>
+        <h2 class="section-title">Certifications & <em></em>Achievements</em></h2>
 
-
-          <a href="#" class="cert-card" target="_blank">
-            <div class="cert-badge">🔷</div>
-            <div class="cert-info">
-              <div class="cert-name">Adobe Certified Professional in Visual Design Using Adobe Photoshop</div>
-              <div class="cert-issuer">Adobe</div>
-              <div class="cert-date">Issued May 2025</div>
-              <div class="cert-verify">✓ Verified Credential</div>
-            </div>
-          </a>
-
-          <a href="#" class="cert-card" target="_blank">
+          <a href="https://www.credly.com/badges/69ab3f94-0c6a-47fb-a7f2-7959ffdc0699/public_url" class="cert-card" target="_blank">
             <div class="cert-badge">🐍</div>
             <div class="cert-info">
               <div class="cert-name">IT Essentials</div>
@@ -299,7 +308,18 @@
           </a>
 
 
-          <a href="#" class="cert-card" target="_blank">
+          <a href="https://www.credly.com/badges/f66df8d1-0dec-43fe-9e85-20c51ef3c8db/public_url" class="cert-card" target="_blank">
+            <div class="cert-badge">🔷</div>
+            <div class="cert-info">
+              <div class="cert-name">Adobe Certified Professional in Visual Design Using Adobe Photoshop</div>
+              <div class="cert-issuer">Adobe</div>
+              <div class="cert-date">Issued May 2025</div>
+              <div class="cert-verify">✓ Verified Credential</div>
+            </div>
+          </a>
+
+          
+          <a href="https://www.credly.com/badges/20f2c07c-5334-432f-9167-286b51dc03f2/public_url" class="cert-card" target="_blank">
             <div class="cert-badge">🛡️</div>
             <div class="cert-info">
               <div class="cert-name">IT Specialist - Networking</div>
@@ -316,9 +336,9 @@
       <footer>
         <div class="footer-copy">© 2026 <span>Glen Justin Alian</span>. All rights reserved.</div>
         <div class="footer-copy" style="display: flex; gap: 16px;">
-          <a href="mailto:glenjustinalian@gmail.com">alianjustin1000@gmail.com</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="mailto:alianjustin1000@gmail.com">alianjustin1000@gmail.com</a>
+          <a href="https://github.com/knotisht" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/justin-alian-25a67828b" target="_blank">LinkedIn</a>
         </div>
       </footer>
 
@@ -329,6 +349,32 @@
   <script src="./js/app.js"></script>
   <script src="./js/typed-hero.js"></script>
   <script src="./js/active-nav.js"></script>
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = themeToggle.querySelector('.sun-icon');
+    const moonIcon = themeToggle.querySelector('.moon-icon');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      html.classList.add('light-mode');
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'block';
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('light-mode');
+      const isLight = html.classList.contains('light-mode');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      
+      // Toggle icons
+      sunIcon.style.display = isLight ? 'none' : 'block';
+      moonIcon.style.display = isLight ? 'block' : 'none';
+    });
+  </script>
 </body>
 
 </html>
