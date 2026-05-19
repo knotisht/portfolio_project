@@ -9,11 +9,11 @@
   --surface2: #161616;
   --border: #1f1f1f;
   --border2: #2a2a2a;
-  --text: #ede8de;
-  --muted: #888880;
-  --accent: #c8f03c;
-  --accent-dim: rgba(200, 240, 60, 0.1);
-  --accent-dim2: rgba(200, 240, 60, 0.06);
+  --text: #f0ece2;
+  --muted: #9a9690;
+  --accent: #5eead4;
+  --accent-dim: rgba(94, 234, 212, 0.1);
+  --accent-dim2: rgba(94, 234, 212, 0.06);
   --red: #f25f5c;
   --blue: #6eb5ff;
 
@@ -40,18 +40,18 @@
   --font-mono: 'Geist Mono', monospace;
 
   /* Font Sizes */
-  --text-xs: 10px;
-  --text-sm: 11px;
-  --text-base: 12px;
-  --text-md: 13px;
-  --text-lg: 14px;
-  --text-xl: 15px;
-  --text-2xl: 16px;
-  --text-3xl: 20px;
-  --text-4xl: 28px;
-  --text-5xl: 34px;
-  --text-6xl: 42px;
-  --text-7xl: 64px;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 17px;
+  --text-2xl: 19px;
+  --text-3xl: 24px;
+  --text-4xl: 32px;
+  --text-5xl: 40px;
+  --text-6xl: 50px;
+  --text-7xl: 72px;
 
   /* Transitions */
   --transition-fast: 0.2s;

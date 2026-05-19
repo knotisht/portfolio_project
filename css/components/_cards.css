@@ -202,6 +202,24 @@
   margin-bottom: var(--spacing-lg);
 }
 
+/* Live link inside school card */
+.project-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: var(--spacing-md);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: opacity var(--transition-fast) var(--easing);
+}
+
+.project-live-link:hover {
+  opacity: 0.75;
+}
+
 /* Certification Card */
 .cert-card {
   background: var(--surface);
