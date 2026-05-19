@@ -16,7 +16,7 @@
 
 .tech-tag:hover {
   background: var(--accent-dim);
-  border-color: rgba(200, 240, 60, 0.3);
+  border-color: rgba(99, 102, 241, 0.3);
   color: var(--accent);
 }
 
@@ -51,9 +51,9 @@
   letter-spacing: 0.06em;
   padding: 3px var(--spacing-lg);
   border-radius: 4px;
-  background: rgba(110, 181, 255, 0.08);
-  border: 1px solid rgba(110, 181, 255, 0.15);
-  color: var(--blue);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  color: var(--accent);
 }
 
 /* Timeline Tag */
@@ -71,8 +71,8 @@
 }
 
 .tl-tag.edu {
-  background: rgba(110, 181, 255, 0.1);
-  color: var(--blue);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent);
 }
 
 .tl-tag.work {
@@ -86,7 +86,7 @@
   align-items: center;
   gap: var(--spacing-sm);
   background: var(--accent-dim);
-  border: 1px solid rgba(200, 240, 60, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.2);
   color: var(--accent);
   font-size: var(--text-sm);
   font-weight: 600;

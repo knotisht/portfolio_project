@@ -1,9 +1,0 @@
-/* ============================================================
-   SECTIONS - RECOMMENDATIONS
-   ============================================================ */
-
-.reco-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-lg);
-}
